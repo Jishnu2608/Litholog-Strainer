@@ -86,7 +86,7 @@ const categoryColors2 = {
                   label: function(context) {
                     const datasetLabel = context.dataset.label; // Get the dataset label
                     const value = context.parsed.y; // Get the y-axis value
-                    return datasetLabel + ': ' + value + ' m'; // Display dataset label and y-axis value
+                    return "Depth of " + datasetLabel + ': ' + value + ' m'; // Display dataset label and y-axis value
                   }
                 }
               }
@@ -133,7 +133,7 @@ const chartConfig2 = {
                   label: function(context) {
                     const datasetLabel = context.dataset.label; // Get the dataset label
                     const value = context.parsed.y; // Get the y-axis value
-                    return datasetLabel + ': ' + value + ' m'; // Display dataset label and y-axis value
+                    return "Depth of " + datasetLabel + ': ' + value + ' m'; // Display dataset label and y-axis value
                   }
                 }
               }
