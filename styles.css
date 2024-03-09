@@ -1,0 +1,102 @@
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  .controls1 {
+    margin-bottom: 20px;
+  }
+  
+  .chart-container1 {
+    margin-bottom: 20px;
+  }
+  
+  .container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  .controls2 {
+    margin-bottom: 20px;
+  }
+  
+  .chart-container2 {
+    margin-bottom: 20px;
+  }
+  
+ 
+  
+  canvas {
+    max-width: 100%;
+  }
+  
+.button1 {
+    background-color: #4e8af3; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.button1:hover {
+    background-color: #2e5496; /* Darker Green */
+}
+
+.button2 {
+    background-color: #4e8af3; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.button2:hover {
+    background-color: #2e5496; /* Darker Green */
+}
+.navbar {
+    background: radial-gradient(circle, rgba(173, 216, 255, 1), rgba(0, 94, 184, 1));
+    height: 40px; /* Adjust height as needed */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999; /* Ensure it stays on top of other content */
+}
+body, .navbar {
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    background: radial-gradient(circle, rgba(173, 216, 255, 1), rgba(0, 94, 184, 1));
+    color: #000;
+    font-weight: 200;
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Helvetica", sans-serif;
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+

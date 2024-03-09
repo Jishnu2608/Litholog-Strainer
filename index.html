@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="navbar"></div> <!-- Navbar -->
+  <div class="container1">
+    <h1>Litholog</h1>
+    <div class="controls1">
+      <label for="category">Select Category:</label>
+      <select id="category1">
+        <option value="loose-soil">Loose Soil</option>
+        <option value="clay-1">Clay - 1</option>
+        <option value="clay-2">Clay - 2</option>
+        <option value="clay-3">Clay - 3</option>
+        <option value="fine-sand-1">Fine Sand - 1</option>
+        <option value="fine-sand-2">Fine Sand - 2</option>
+        <option value="fine-sand-3">Fine Sand - 3</option>
+        <option value="coarse-sand-1">Coarse Sand - 1</option>
+        <option value="coarse-sand-2">Coarse Sand - 2</option>
+        <option value="coarse-sand-3">Coarse Sand - 3</option>
+        <option value="fine-pebbles-1">Fine Pebbles - 1</option>
+        <option value="fine-pebbles-2">Fine Pebbles - 2</option>
+        <option value="fine-pebbles-3">Fine Pebbles - 3</option>
+        <option value="hard-rocks-1">Hard Rocks - 1</option>
+        <option value="hard-rocks-2">Hard Rocks - 2</option>
+        <option value="hard-rocks-3">Hard Rocks - 3</option>
+      </select>
+      <label for="height1">Enter Height:</label>
+      <input type="number" id="height1" min="0">
+      <button class="button1" onclick="addData1()">Add Data</button>
+      <button class="button1" id="downloadChart1">Download Chart</button> <!-- Download button -->
+    </div>
+    <div class="chart-container">
+      <canvas id="myChart1"></canvas>
+    </div>   
+  </div>
+
+  <!-- Second Chart -->
+  <div class="container2">
+    <h1>Strainer</h1>
+    <div class="controls2">
+      <label for="category">Select Strainer:</label>
+      <select id="category2">
+        <option value="strainer-1">Strainer 1</option>
+        <option value="blankspace-1">Blank Space - 1</option>
+        <option value="strainer-2">Strainer 2</option>
+        <option value="blankspace-2">Blank Space - 2</option>
+        <option value="strainer-3">Strainer 3</option>
+        <option value="blankspace-3">Blank Space - 3</option>
+        <option value="strainer-4">Strainer 4</option>
+        <option value="blankspace-4">Blank Space - 4</option>
+        <option value="strainer-5">Strainer 5</option>
+        <option value="blankspace-5">Blank Space - 5</option>
+      </select>
+      <label for="height2">Enter Height:</label>
+      <input type="number" id="height2" min="0">
+      <button class="button2" onclick="addData2()">Add Data</button>
+      <button class="button2" id="downloadChart2">Download Chart</button> <!-- Download button -->
+    </div>
+    <div class="chart-container2">
+      <canvas id="myChart2"></canvas>
+    </div>   
+  </div>
+
+  <footer class="footer">Made by Jishnu</footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
