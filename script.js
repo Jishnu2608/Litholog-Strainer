@@ -11,35 +11,35 @@ let chartData1 = {
   
   // Colors for different categories
   const categoryColors1 = {
-    'loose-soil': 'rgba(230, 25, 75, 0.5)', // Red
-    'clay-1': 'rgba(60, 180, 75, 0.5)', // Green
-    'clay-2': 'rgba(255, 225, 25, 0.5)', // Yellow
-    'clay-3': 'rgba(70, 99, 216, 0.5)', // Blue
-    'fine-sand-1': 'rgba(245, 130, 49, 0.5)', // Orange
-    'fine-sand-2': 'rgba(145, 30, 180, 0.5)', // Purple
-    'fine-sand-3': 'rgba(70, 240, 240, 0.5)', // Cyan
+    'loose-soil': 'rgba(230, 25, 75, 0.65)', // Red
+    'clay-1': 'rgba(60, 180, 75, 0.65)', // Green
+    'clay-2': 'rgba(255, 225, 25, 0.65)', // Yellow
+    'clay-3': 'rgba(70, 99, 216, 0.65)', // Blue
+    'fine-sand-1': 'rgba(245, 130, 49, 0.65)', // Orange
+    'fine-sand-2': 'rgba(145, 30, 180, 0.65)', // Purple
+    'fine-sand-3': 'rgba(70, 240, 240, 0.65)', // Cyan
     'coarse-sand-1': 'rgba(240, 50, 230, 0.5)', // Magenta
-    'coarse-sand-2': 'rgba(188, 246, 12, 0.5)', // Lime
+    'coarse-sand-2': 'rgba(188, 246, 12, 0.65)', // Lime
     'coarse-sand-3': 'rgba(250, 190, 190, 0.65)', // Pink
-    'fine-pebbles-1': 'rgba(0, 128, 128, 0.5)', // Teal
+    'fine-pebbles-1': 'rgba(0, 128, 128, 0.65)', // Teal
     'fine-pebbles-2': 'rgba(230, 190, 255, 0.65)', // Lavender
-    'fine-pebbles-3': 'rgba(154, 99, 36, 0.5)', // Brown
+    'fine-pebbles-3': 'rgba(154, 99, 36, 0.65)', // Brown
     'hard-rocks-1': 'rgba(255, 250, 200, 0.70)', // Beige
-    'hard-rocks-2': 'rgba(128, 0, 0, 0.5)', // Maroon
-    'hard-rocks-3': 'rgba(170, 255, 195, 0.5)', // Mint
+    'hard-rocks-2': 'rgba(128, 0, 0, 0.65)', // Maroon
+    'hard-rocks-3': 'rgba(170, 255, 195, 0.65)', // Mint
 };
 
 const categoryColors2 = {
-    'strainer-1': 'rgba(255, 99, 132, 0.5)',
-    'strainer-2': 'rgba(54, 162, 235, 0.5)',
+    'strainer-1': 'rgba(255, 99, 132, 0.65)',
+    'strainer-2': 'rgba(54, 162, 235, 0.65)',
     'strainer-3': 'rgba(255, 206, 86, 0.65)',
-    'strainer-4': 'rgba(75, 192, 192, 0.5)',
-    'strainer-5': 'rgba(153, 102, 255, 0.5)',
-    'blankspace-1' : '#fff',
-    'blankspace-2' : '#fff',
-    'blankspace-3' : '#fff',
-    'blankspace-4' : '#fff',
-    'blankspace-5' : '#fff',
+    'strainer-4': 'rgba(75, 192, 192, 0.65)',
+    'strainer-5': 'rgba(153, 102, 255, 0.65)',
+    'blankspace-1' : '#F5F5F5',
+    'blankspace-2' : '#F5F5F5',
+    'blankspace-3' : '#F5F5F5',
+    'blankspace-4' : '#F5F5F5',
+    'blankspace-5' : '#F5F5F5',
     
   };
 
@@ -76,7 +76,20 @@ const categoryColors2 = {
                 font: {
                     size: 18
                 }
-            }
+            },
+            tooltip: {
+                mode: 'nearest', // Show only the nearest tooltip
+                callbacks: {
+                  title: function() {
+                    return ''; // Remove the tooltip title
+                  },
+                  label: function(context) {
+                    const datasetLabel = context.dataset.label; // Get the dataset label
+                    const value = context.parsed.y; // Get the y-axis value
+                    return datasetLabel + ': ' + value + ' m'; // Display dataset label and y-axis value
+                  }
+                }
+              }
         }
     }
 };
@@ -110,7 +123,20 @@ const chartConfig2 = {
                 font: {
                     size: 18
                 }
-            }
+            },
+            tooltip: {
+                mode: 'nearest', // Show only the nearest tooltip
+                callbacks: {
+                  title: function() {
+                    return ''; // Remove the tooltip title
+                  },
+                  label: function(context) {
+                    const datasetLabel = context.dataset.label; // Get the dataset label
+                    const value = context.parsed.y; // Get the y-axis value
+                    return datasetLabel + ': ' + value + ' m'; // Display dataset label and y-axis value
+                  }
+                }
+              }
         }
     }
 };
