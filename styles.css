@@ -1,3 +1,7 @@
+body, h1, h2, h3, h4, h5, h6, p, label, button, select, input, footer {
+  font-family: 'Helvetica', sans-serif;
+}
+
 .container1 {
     max-width: 800px;
     margin: 0 auto;
@@ -8,6 +12,29 @@
   
   .controls1 {
     margin-bottom: 20px;
+  }
+
+  label {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 200px; /* Adjust width as needed */
+    margin-right: 10px;
+  }
+
+  input[type="number"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 100px; /* Adjust width as needed */
+    margin-right: 10px;
   }
   
   .chart-container1 {
@@ -30,7 +57,17 @@
     margin-bottom: 20px;
   }
   
- 
+  .navbar {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .navbar-title {
+    color: white;
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-left: 100px; 
+  }
   
   canvas {
     max-width: 100%;
